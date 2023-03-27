@@ -21,33 +21,33 @@ def click_image(image_path: str) -> tuple:
 # main
 def main():
 
-        # 価格を一桁減らす
-        click_image('./image/syouhinnnohensyuu.png')
-        time.sleep(5)
+    # 価格を一桁減らす
+    click_image('./image/syouhinnnohensyuu.png')
+    time.sleep(5)
 
-        pgui.press('end')
-        time.sleep(2)
+    pgui.press('end')
+    time.sleep(2)
 
-        # 価格を一桁増やす
-        click_image('./image/hanbaikakaku.png')
-        pgui.press('end')
-        pgui.write('0')
-        pgui.press('enter')
-        time.sleep(3)
+    # 価格を一桁増やす
+    click_image('./image/hanbaikakaku.png')
+    pgui.press('end')
+    pgui.write('0')
+    pgui.press('enter')
+    time.sleep(3)
 
-        click_image('./image/syouhinnnohensyuu.png')
-        time.sleep(5)
+    click_image('./image/syouhinnnohensyuu.png')
+    time.sleep(5)
 
-        pgui.press('end')
-        time.sleep(2)
+    pgui.press('end')
+    time.sleep(2)
 
-        click_image('./image/hanbaikakaku.png')
-        pgui.press('end')
-        pgui.press('backspace')
-        pgui.press('enter')
-        time.sleep(3)
+    click_image('./image/hanbaikakaku.png')
+    pgui.press('end')
+    pgui.press('backspace')
+    pgui.press('enter')
+    time.sleep(3)
 
-        pgui.hotkey('ctrl', 'w')
+    pgui.hotkey('ctrl', 'w')
 
 if __name__ == '__main__':
 
